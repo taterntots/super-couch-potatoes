@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   end
   
   resources :media
-  resources :friends
   get 'home/about'
   root 'media#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
