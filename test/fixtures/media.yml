@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating: 1
+  date_completed: 2021-12-30
+  media_type: MyString
+  first_time: false
+  img_URL: MyString
+  user_id: 1
+
+two:
+  title: MyString
+  rating: 1
+  date_completed: 2021-12-30
+  media_type: MyString
+  first_time: false
+  img_URL: MyString
+  user_id: 1

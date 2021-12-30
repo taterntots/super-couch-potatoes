@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @medium.title %>
+    <%= @medium.rating %>
+  </h1>
+  <p class="lead">
+    <%= @medium.date_completed %>  | 
+    <%= @medium.media_type %>  |  
+    <%= @medium.first_time %>
+  </p>
+  <br/>
+  <%= link_to 'Edit', edit_medium_path(@medium), class:"btn btn-secondary" %>
+  <%= link_to 'Delete', @medium, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  <%= link_to 'Back', media_path, class:"btn btn-dark" %>
+</div>
