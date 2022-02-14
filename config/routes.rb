@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   end
   
   resources :media
-  get 'home/about'
+  get 'home/games'
+  get 'home/movies'
   root 'media#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

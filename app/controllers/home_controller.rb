@@ -2,6 +2,25 @@ class HomeController < ApplicationController
   def index
   end
 
-  def about
+  # GET /home/games
+  def games
+    @media = Medium.all
+    @path = request.path
+    @mediaType = if @path.include? "game"
+      "game"
+    else
+      "none"
+    end
+  end
+
+  # GET /home/movies
+  def movies
+    @media = Medium.all
+    @path = request.path
+    @mediaType = if @path.include? "movie"
+      "movie"
+    else
+      "none"
+    end
   end
 end

@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <% @media.each do |media| %>
-        <% if media.user == current_user %>
+        <% if media.user == current_user && media.media_type === @mediaType %>
           <tr>
             <td>
               <%= media.title %>
