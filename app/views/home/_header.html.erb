@@ -12,6 +12,12 @@
         <li class="nav-item">
           <%= link_to "Movies", home_movies_path, class:"nav-link" %>
         </li>
+        <li class="nav-item">
+          <%= link_to "TV", home_shows_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Books", home_books_path, class:"nav-link" %>
+        </li>
         <% if user_signed_in? %>
           <li class="nav-item">
             <%= link_to "Add Medium", new_medium_path, class:"nav-link" %>

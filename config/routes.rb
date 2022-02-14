@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :media
   get 'home/games'
   get 'home/movies'
+  get 'home/books'
+  get 'home/shows'
   root 'media#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
