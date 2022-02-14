@@ -26,6 +26,10 @@
     <%= form.text_field :media_type, class:"form-control", placeholder: "Media Type" %>
   </div>
   <div class="field form-group">
+    <%= form.label :img_URL, style: "display: block", class: "field-label" %>
+    <%= form.text_field :img_URL, class:"form-control", placeholder: "Image URL" %>
+  </div>
+  <div class="field form-group">
     <%= form.label :first_time, style: "display: block", class: "field-label" %>
     <%= form.check_box :first_time %>
   </div>
