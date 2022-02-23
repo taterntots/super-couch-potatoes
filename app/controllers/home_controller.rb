@@ -4,13 +4,9 @@ class HomeController < ApplicationController
 
   # GET /home/games
   def games
-    @media = Medium.all
-    @path = request.path
-    @mediaType = if @path.include? "game"
-      "game"
-    else
-      "none"
-    end
+    @gameMedia = Medium.where(:media_type => "game").order('date_completed ASC')
+    @selectedYear = 2022
+    @months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   end
 
   # GET /home/movies
